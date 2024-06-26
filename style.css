@@ -1,0 +1,67 @@
+:root{
+  --primaryColor : #FFB400;
+  --buttonColor:  #AD1A1E;
+  --black: #232122;
+  --testFont: Plus;
+}
+
+@font-face {
+    font-family:"Plus" ;
+    src: url(assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+
+/* --------------------------Header--------------------------*/
+.front-page{
+  background-color: var(--primaryColor);
+  height: 120vh;
+}
+.heading1{
+  font-size: 30px;
+}
+
+
+/* --------------------------Nav Bar--------------------------*/
+nav{
+    font-family: var(--testFont);
+    font-weight: 700;
+
+}
+.navbar-brand img{
+  width: 150px;
+  height: 80px;
+  object-fit: contain;
+}
+.nav-item .nav-link{
+  color: #AD1A1E;
+  /* text-transform: uppercase; */
+  font-size: 15px;
+}
+button.bt{
+  background: var(--buttonColor);
+  color: white;
+  border: none;
+  font-size: 15px;
+  letter-spacing: 2px;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+
+}
+button.btn-2{
+    overflow: hidden;
+    position: relative;
+  }
+  
+  button.btn-2:hover{
+    background-color:white;
+    color: black;
+  }
+
+
+ 
