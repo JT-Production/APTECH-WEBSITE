@@ -1,65 +1,63 @@
  /* --------------------------Hero--------------------------*/
 
- .hero-left{
-    transform: translateY(150px);
-  }
-  .hero-header{
-    font-size: 80px;
-    line-height: 4.5rem;
-    color: #AD1A1E;
-  }
-  .hero-subheader{
-    font-size: 24px;
-    font-weight: 400;
-    color: #AD1A1E;
-  }
-  .hero-right img{
-    width: 100%;
-  }
-  
-  /* --------------------------Hero-2--------------------------*/
-  .hero2{
-  
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  }
-  .hero2-items .col-md-6 img{
-    width: 70px;
-    height: 70px;
-    object-fit: contain;
-  }
-  @media all and (max-width: 1300px){
-    .front-page{
-      height: 140vh;
-    }
-    
-  .hero-left{
-    transform: translateY(100px);
-  }
-  .hero-header{
-    font-size: 70px;
-    line-height: 4.3rem;
-  }
-  .hero-subheader{
-    font-size: 24px;
-  }
-  .hero-right img{
-    display: none;
-  }
-  .curved img{
-    display: none;
-  }
-  }
-  @media all and (max-width: 800px){
-    .hero-right img{
-      display:none;
-    }
-    .curved img{
-      display: none;
-    }
-    .front-page{
-      height: 100vh;
-    }
-   
-  }
-  
-  
+ .hero-left {
+   transform: translateY(150px);
+ }
+
+ .hero-right img {
+   width: 100%;
+ }
+
+ /* --------------------------Hero-2--------------------------*/
+ .hero2 {
+   /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+   box-shadow: 3px 5px 13px rgba(0, 0, 0, 0.055);
+ }
+
+ .hero2-items .col-md-6 img {
+   width: 70px;
+   height: 70px;
+   object-fit: contain;
+ }
+
+ @media all and (max-width: 1300px) {
+   .front-page {
+     height: 140vh;
+   }
+
+   .hero-left {
+     transform: translateY(100px);
+   }
+
+   .hero-header {
+     font-size: 70px;
+     line-height: 4.3rem;
+   }
+
+   .hero-subheader {
+     font-size: 24px;
+   }
+
+   .hero-right img {
+     display: none;
+   }
+
+   .curved img {
+     display: none;
+   }
+ }
+
+ @media all and (max-width: 800px) {
+   .hero-right img {
+     display: none;
+   }
+
+   .curved img {
+     display: none;
+   }
+
+   .front-page {
+     height: 100vh;
+   }
+
+ }
