@@ -1,67 +1,122 @@
-:root{
-  --primaryColor : #FFB400;
-  --buttonColor:  #AD1A1E;
+
+:root {
+  --primaryColor: #FFB400;
+  --brandRed: #AD1A1E;
   --black: #232122;
-  --testFont: Plus;
+  --poppinsRegular: "Poppins", sans-serif;
+  --poppinsMedium: "Poppins", sans-serif;
+  --poppinsSemibold: "Poppins", sans-serif;
+  --poppinsBold: "Poppins", sans-serif;
+  --headline: Ornitons, sans-serif;
 }
 
 @font-face {
-    font-family:"Plus" ;
-    src: url(assets/fonts/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf);
+  font-family:"Ornitons" ;
+  src: url(assets/fonts/ornitons/OrnitonsRegular.ttf);
 }
-
+@font-face {
+  font-family:"Poppins" ;
+  src: url(assets/fonts/Poppins/Poppins-Regular.ttf);
+}
 
 /* --------------------------Header--------------------------*/
-.front-page{
+.front-page {
   background-color: var(--primaryColor);
-  height: 120vh;
+  height: 122vh;
 }
-.heading1{
+
+.heading1 {
   font-size: 30px;
 }
 
-
 /* --------------------------Nav Bar--------------------------*/
-nav{
-    font-family: var(--testFont);
-    font-weight: 700;
-
+nav {
+  font-family: var(--poppinsSemibold);
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
 }
-.navbar-brand img{
+
+.navbar-brand img {
   width: 150px;
   height: 80px;
   object-fit: contain;
 }
-.nav-item .nav-link{
-  color: #AD1A1E;
+
+.nav-item .nav-link {
+  color: var(--brandRed);
   /* text-transform: uppercase; */
   font-size: 15px;
 }
-button.bt{
-  background: var(--buttonColor);
-  color: white;
-  border: none;
+
+.headline {
+  font-family: var(--headline);
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 4.5rem;
+  color: var(--brandRed);
+}
+
+.title {
+  font-family: var(--poppinsBold);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 3.5rem;
+  color: var(--brandRed);
+}
+
+.sub-title {
+  font-family: var(--poppinsSemibold);
+  font-weight: 500;
+  font-size: 28px;
+  color: var(--black);
+}
+
+.paragraph {
+  font-family: var(--poppinsRegular);
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--black);
+}
+
+/* .bt{
+  background: none;
+  color: var(--buttonColor);
+  border: 1px solid var(--brandRed);
   font-size: 15px;
-  letter-spacing: 2px;
   padding: 15px 40px;
-  text-transform: uppercase;
   cursor: pointer;
-  display: inline-block;
-  
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
   transition: all 0.4s;
-
+  border: 1px solid var(--buttonColor);
+  font-family: var(--poppinsSemibold);
 }
-button.btn-2{
+.btn-2{
     overflow: hidden;
     position: relative;
+    color: #AD1A1E;
   }
   
-  button.btn-2:hover{
-    background-color:white;
-    color: black;
+.btn-2:hover{
+    
+    color: white;
   }
+.btn-2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    border-radius: 0 0 50% 50%;
+    background-color: #AD1A1E;
+    z-index: -1;
+    transition: 0.8s;
+  }
+  .btn-2:hover::before{
+    height: 180%;
+  } */
 
 
  
